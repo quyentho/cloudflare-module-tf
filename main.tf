@@ -19,5 +19,5 @@ module "cloudflare_client" {
 module "cloudflare_webapi" {
   source = "./cloudflare"
   ip = var.client_ip
-  record_name = var.environment == "production" ? "quyenprod" : "quyenstag"
+  record_name = var.environment == "production" ? "quyenprod1" : "quyenstag1"
 }
